@@ -30,6 +30,7 @@
 
       <p>This is a loose estimate and is designed to show a loose impact rather than an exact change.</p>
       <table>
+        <!-- on table it is a cell count, so your first cell in each row will be items name, second cell is quantity etc-->
         <tr>
           <th>Item</th>
           <th>Qty</th>
@@ -37,24 +38,24 @@
           <th>Total before tariff</th>
           <th>Total after tariff</th>
         </tr>
-        <tr>
+        <tr class="Item" data-tariff-percent="0">
           <td>Labor</td>
-          <td><input /></td>
-          <td><input /></td>
+          <td class="qty"><input type="number" min="0" placeholder="# Workers" /></td>
+          <td class="cost"><input type="number" min="0" placeholder="$/hour" /></td>
           <td class="pre_total">$<span></span></td>
           <td class="post_total">$<span></span></td>
         </tr>
-        <tr>
+        <tr class="Item" data-tariff-percent="25">
           <td>Steel materials</td>
-          <td><input /></td>
-          <td><input /></td>
+          <td class="qty"><input type="number" min="0" /></td>
+          <td class="cost"><input type="number" min="0" /></td>
           <td class="pre_total">$<span></span></td>
           <td class="post_total">$<span></span></td>
         </tr>
-        <tr>
+        <tr class="Item" data-tariff-percent="10">
           <td>Aluminum materials</td>
-          <td><input /></td>
-          <td><input /></td>
+          <td class="qty"><input type="number" min="0" /></td>
+          <td class="cost"><input type="number" min="0" /></td>
           <td class="pre_total">$<span></span></td>
           <td class="post_total">$<span></span></td>
         </tr>
